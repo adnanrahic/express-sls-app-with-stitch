@@ -1,4 +1,4 @@
-service: express-sls-app
+service: express-sls-app-with-stitch
 
 custom:
   secrets: ${file(secrets.json)}
@@ -8,12 +8,12 @@ provider:
   runtime: nodejs8.10
   stage: production
   region: eu-central-1
-  environment: 
-    NODE_ENV: ${self:custom.secrets.NODE_ENV}
+  # environment: 
+  #   NODE_ENV: ${self:custom.secrets.NODE_ENV}
 
 functions:
   app:
-    handler: app.run
+    handler: server.run
     events:
       - http:
           path: /
