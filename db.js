@@ -5,8 +5,8 @@ const database = 'test'
 const connection = {}
 
 module.exports = async () => {
-  console.log(connection.isConnected)
   if (connection.isConnected) {
+    console.log('[MongoDB Stitch] Using existing connection to Stitch')
     return connection
   }
 
