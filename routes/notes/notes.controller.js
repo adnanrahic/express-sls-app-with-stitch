@@ -1,6 +1,7 @@
+/* global __root */
 const express = require('express')
 const notesController = express.Router()
-const initDb = require(global.root + '/db')
+const initDb = require(__root + '/db')
 
 notesController
   .post('/', async (req, res, next) => {

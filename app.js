@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-global.root = __dirname
+global.__root = __dirname
 
 const routes = require('./routes')
 app.use('/api', routes)
