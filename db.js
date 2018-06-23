@@ -1,7 +1,7 @@
 const { StitchClientFactory, BSON } = require('mongodb-stitch')
 const { ObjectId } = BSON
 const appId = 'test-stitch-dejsq'
-const database = 'test'
+const database = 'test3'
 const connection = {}
 
 module.exports = async () => {
@@ -15,7 +15,7 @@ module.exports = async () => {
     const db = client.service('mongodb', 'mongodb-atlas').db(database)
     await client.login()
     const ownerId = client.authedId()
-    console.log('[MongoDB Stitch] Connected to Stitch')
+    console.log('[MongoDB Stitch] Created connection to Stitch')
 
     connection.isConnected = true
     connection.db = db

@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "offline": "sls offline start"
+    "offline": "sls offline start --skipCacheInvalidation"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adnan Rahić",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
