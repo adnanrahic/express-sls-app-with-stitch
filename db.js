@@ -1,7 +1,7 @@
 const { StitchClientFactory, BSON } = require('mongodb-stitch')
 const { ObjectId } = BSON
-const appId = 'test-stitch-dejsq'
-const database = 'test3'
+const appId = 'notes-stitch-xwvtw'
+const database = 'stitch-db'
 const connection = {}
 
 module.exports = async () => {
