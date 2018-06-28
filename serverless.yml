@@ -10,6 +10,9 @@ provider:
   region: eu-central-1
   environment: 
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
+    STITCH_APP_ID: ${self:custom.secrets.STITCH_APP_ID}
+    DB_NAME: ${self:custom.secrets.DB_NAME}
+    DB_URL: ${self:custom.secrets.DB_URL}
 
 functions:
   app:

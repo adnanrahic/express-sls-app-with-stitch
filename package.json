@@ -12,7 +12,9 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "mongodb": "^3.1.0",
     "mongodb-stitch": "^3.1.4",
+    "mongoose": "^5.1.7",
     "serverless-http": "^1.5.5"
   },
   "devDependencies": {
